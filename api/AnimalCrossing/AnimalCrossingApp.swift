@@ -12,7 +12,8 @@ struct AnimalCrossingApp: App {
     var body: some Scene {
         WindowGroup {
 //            NavigationView{
-            ContentView(filteredVillagers: [])
+           // ContentView(filteredVillagers: [])
+            SplashScreenView()
             }
             
 //        }
