@@ -19,7 +19,7 @@ struct SplashScreenView: View {
             ContentView(filteredVillagers: [])
         } else {
             ZStack (alignment: .center){
-                Color.init("fundo")
+                Color.init("Creme")
                     .ignoresSafeArea()
                     .opacity(0.60)
             
@@ -35,10 +35,10 @@ struct SplashScreenView: View {
                             Spacer()
                             .frame(height: 35)
                         
-                        Text("Villagers")
-                            .font(Font.custom("FinkHeavy", size: 30))
-                            .foregroundColor(.brown.opacity(0.80))
-                        
+                        Text("The Villagers")
+                            .font(Font.custom("FinkHeavy", size: 35))
+                            //.foregroundColor(.brown.opacity(0.80))
+                            .foregroundColor(Color("MarromText").opacity(0.80))
                             
                     }
                     .scaleEffect(size)
