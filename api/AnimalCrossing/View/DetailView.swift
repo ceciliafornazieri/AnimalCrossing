@@ -1,7 +1,7 @@
 //
 //  DetailView.swift
 //  AnimalCrossing
-//
+// Created by Cecília Fornazieri on 06/02/23.
 //  Created by Mari Higashi on 07/02/23.
 //
 
