@@ -21,7 +21,7 @@ struct CatchTranslations: Hashable, Codable {
         case catchUSes = "catch-USes"
         case catchEUfr = "catch-EUfr"
         case catchUSfr = "catch-USfr"
-        
+        //oiii
         case catchEUit = "catch-EUit"
         case catchEUnl = "catch-EUnl"
         case catchCNzh = "catch-CNzh"
