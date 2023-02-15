@@ -81,7 +81,7 @@ extension UnkeyedDecodingContainer {
     mutating func decode(_ type: Array<Any>.Type) throws -> Array<Any> {
         var array: [Any] = []
         while isAtEnd == false {
-            // See if the current value in the JSON array is `null` first and prevent infite recursion with nested arrays.
+            
             if try decodeNil() {
                 continue
             } else if let value = try? decode(Bool.self) {

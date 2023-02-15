@@ -31,7 +31,6 @@ struct SplashScreenView: View {
                             .scaledToFill()
                             .frame(width: 200, height: 200)
 
-                        
                             Spacer()
                             .frame(height: 35)
                         
@@ -39,7 +38,6 @@ struct SplashScreenView: View {
                             .font(Font.custom("FinkHeavy", size: 30))
                             .foregroundColor(.brown.opacity(0.80))
                         
-                            
                     }
                     .scaleEffect(size)
                     .opacity(opacity)
@@ -54,17 +52,9 @@ struct SplashScreenView: View {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                         self.isActive = true
                     }
-            }
+                }
             }
         }
-        
-       
     }
 }
 
-struct SplashScreenView_Previews: PreviewProvider {
-    static var previews: some View {
-        SplashScreenView()
-    }
-}
-            

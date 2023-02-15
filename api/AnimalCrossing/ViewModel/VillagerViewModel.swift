@@ -33,7 +33,7 @@ class VillagerViewModel: ObservableObject {
                 let json = try JSONSerialization.data(withJSONObject: content)
 
                 let convertion = try JSONDecoder().decode(VillagerModel.self, from: json)
-                print(convertion)
+                //print(convertion)
                 self.villagers.append(convertion)
                 //print(villagers.)
             } catch {

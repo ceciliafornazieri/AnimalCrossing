@@ -41,10 +41,8 @@ struct URLImage: View {
 
 struct ContentView: View {
     @StateObject var villagerVM = VillagerViewModel()
-   // let villager: [VillagerModel]
-    @State  var filteredVillagers: [VillagerModel]
+    @State var filteredVillagers: [VillagerModel]
     @State var searchText = ""
-
     
         private func searchVillagers(keyword: String){
             filteredVillagers = villagerVM.villagers.filter { villagers in (villagers.name?.nameUSen ?? "nil").contains(keyword)}
@@ -65,12 +63,14 @@ struct ContentView: View {
                         .foregroundColor(Color("MarromText"))
                     Spacer()
        
-                    NavigationLink(destination: PersonalityView(), label: {
+                    NavigationLink{
+                        PersonalityView()}
+                label: {
                         Image(systemName: "person.fill.questionmark")
                             .foregroundColor(Color("MarromText"))
                             .font(.system(size: 25, weight: .regular))
                         
-                    })
+                    }
                 }
                 .padding(8)
                 .padding(.horizontal)
@@ -128,7 +128,10 @@ struct ContentView: View {
                                             .foregroundColor(.brown)
                                     }
                                 }
+                                
                             }
+                            
+                            
                         }
                         .simultaneousGesture(TapGesture().onEnded{})
 
@@ -158,11 +161,4 @@ struct ContentView: View {
             
         }
     }
-    
-//        struct ContentView_Previews: PreviewProvider {
-//            static var previews: some View {
-//            }
-//                }
-    //}
-    
 }

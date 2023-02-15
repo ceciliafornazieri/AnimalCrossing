@@ -11,11 +11,7 @@ import SwiftUI
 struct AnimalCrossingApp: App {
     var body: some Scene {
         WindowGroup {
-//            NavigationView{
-           // ContentView(filteredVillagers: [])
-            SplashScreenView()
-            }
-            
-//        }
+           SplashScreenView()
+        }
     }
 }

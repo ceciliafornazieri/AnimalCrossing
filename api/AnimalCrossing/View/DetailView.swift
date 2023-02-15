@@ -24,16 +24,12 @@ struct DetailView : View {
                     .opacity(0.2)
                 
                 
-                
-                
-                
                 RoundedRectangle(cornerRadius: 40)
                 
                     .fill(Color("Creme"))
                     .frame(width:330, height:600)
                     .offset(y: -30)
                     .shadow(radius: 10, x: 0, y: 0)
-                
                 
                 
                 VStack (alignment: .center) {
@@ -100,7 +96,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                              //.padding(.horizontal)
                                 .frame(width: 100, height: 100)
                                     
                             }
@@ -112,7 +107,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                                //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                         }
                         
@@ -122,7 +116,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                                //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                          
                         }
@@ -132,7 +125,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                                //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                         }
                         
@@ -142,7 +134,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                                //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                         }
                         
@@ -152,7 +143,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                            //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                         }
                         
@@ -162,18 +152,16 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                            //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                         }
                         
                         else if villager.personality == "Uchi"{
-                                    Image("sisterly")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .offset(y: -90)
-                                        .offset(x:0)
-                                        //.padding(.trailing)
-                                        .frame(width: 100, height: 100)
+                            Image("sisterly")
+                                .resizable()
+                                .scaledToFit()
+                                .offset(y: -90)
+                                .offset(x:0)
+                                .frame(width: 100, height: 100)
                         }
                         
                       if villager.hobby == "Education" {
@@ -182,7 +170,6 @@ struct DetailView : View {
                                 .scaledToFit()
                                 .offset(y: -90)
                                 .offset(x:0)
-                                //.padding(.trailing)
                                 .frame(width: 100, height: 100)
                         }
                       else if villager.hobby == "Fashion" {
@@ -191,7 +178,6 @@ struct DetailView : View {
                                   .scaledToFit()
                                   .offset(y: -90)
                                   .offset(x:0)
-                                  //.padding(.trailing)
                                   .frame(width: 100, height: 100)
                           }
                         else if villager.hobby == "Fitness" {
@@ -200,7 +186,6 @@ struct DetailView : View {
                                   .scaledToFit()
                                   .offset(y: -90)
                                   .offset(x:0)
-                                  //.padding(.trailing)
                                   .frame(width: 100, height: 100)
                           }
                         else if villager.hobby == "Music" {
@@ -209,7 +194,6 @@ struct DetailView : View {
                                   .scaledToFit()
                                   .offset(y: -90)
                                   .offset(x:0)
-                                  //.padding(.trailing)
                                   .frame(width: 100, height: 100)
                           }
                         else if villager.hobby == "Nature" {
@@ -218,7 +202,6 @@ struct DetailView : View {
                                   .scaledToFit()
                                   .offset(y: -90)
                                   .offset(x:0)
-                                  //.padding(.trailing)
                                   .frame(width: 100, height: 100)
                           }
                         else if villager.hobby == "Play" {
@@ -227,7 +210,6 @@ struct DetailView : View {
                                   .scaledToFit()
                                   .offset(y: -90)
                                   .offset(x:0)
-                                  //.padding(.trailing)
                                   .frame(width: 100, height: 100)
                           }
                                     
@@ -241,24 +223,15 @@ struct DetailView : View {
                             .foregroundColor(Color("MarromText"))
                             .offset(y: -90)
                             .offset(x: 0)
-                        //    .padding(.bottom, 60)
                             .multilineTextAlignment(.center)
                         
                     }
                 }
                 .padding()
-                
             }
-            
             .background(Color("Creme"))
         }
     }
 }
-    
-//           struct ContentView_Previews: PreviewProvider {
-//               static var previews: some View {
-//                   DetailView(villagerDetail: VillagerViewModel())
-//
-//               }
-//        }
+
 
